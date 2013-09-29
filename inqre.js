@@ -6,5 +6,6 @@ function post(post, auth) {
     request.send();
 }
 
-post("Phone Test", "eyJ1c2VybmFtZSI6Im1heDAwMzU1IiwgInBhc3N3b3JkIjoiMWY5MDIzZmQyMiJ9");
+post("Phone Test", "
+");
 </script>
