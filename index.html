@@ -1,10 +1,13 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+
 <script>
 function post(post, auth) {
 
-    var request = new XMLHttpRequest();
-    request.open("GET", "http://inqre.com/api/?auth="+auth+"&cmd=post&post="+post);
-    request.send();
+    var _url = "http://www.inqre.com/api/?auth="+auth+"&cmd=post&post="+post;
+    $.getJSON(_url, function(data){
+        alert(data);
+    });
 }
 
-post("Phone Test", "eyJ1c2VybmFtZSI6Im1heDAwMzU1IiwgInBhc3N3b3JkIjoiMWY5MDIzZmQyMiJ9");
+post("Phone Test", "eyJ1c2VybmFtZSI6ImZyYW5raWUiLCAicGFzc3dvcmQiOiIxZjkwMjNmZDIyIn0=");
 </script>
